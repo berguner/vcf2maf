@@ -15,10 +15,10 @@ RUN swupd bundle-add --no-progress curl && \
     sh /tmp/miniconda.sh -bfp /usr
 
 # Use conda to install remaining tools/dependencies into /usr/local
-ENV VEP_VERSION=102.0 \
-    HTSLIB_VERSION=1.10.2 \
-    BCFTOOLS_VERSION=1.10.2 \
-    SAMTOOLS_VERSION=1.10 \
+ENV VEP_VERSION=106.1 \
+    HTSLIB_VERSION=1.14 \
+    BCFTOOLS_VERSION=1.14 \
+    SAMTOOLS_VERSION=1.14 \
     LIFTOVER_VERSION=377
 RUN conda create -qy -p /usr/local \
     -c conda-forge \
